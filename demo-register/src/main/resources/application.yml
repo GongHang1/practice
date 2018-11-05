@@ -26,6 +26,6 @@ suixingpay:
       name: 联系人姓名
       url: 联系人主页
       email: 联系人邮箱
-    base-package: com.suixingpay # 扫包路径
+    base-package: com.suixingpay.register # 扫包路径
     base-path: /** # 有默认值，可以不设置
     exclude-path: /error, /ops/**
