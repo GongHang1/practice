@@ -2,6 +2,7 @@ package com.suixingpay.register.controller;
 
 import com.suixingpay.register.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,8 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
  * 注意：本内容仅限于随行付支付有限公司内部传阅，禁止外泄以及用于其他的商业用途。
  */
 @RestController
+@RequestMapping("/user/register")
 public class RegisterController {
 
     @Autowired
     UserService userService;
+
+
 }

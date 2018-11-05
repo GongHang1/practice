@@ -11,5 +11,5 @@ import org.springframework.stereotype.Component;
  * 注意：本内容仅限于随行付支付有限公司内部传阅，禁止外泄以及用于其他的商业用途。
  */
 @Component
-public class UserMapper {
+public interface UserMapper {
 }
