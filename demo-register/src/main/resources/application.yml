@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: mybatis/*.xml
+  configuration:
+    default-statement-timeout: 5
+
+spring:
+  datasource:
+    url: jdbc:mysql://172.16.40.252:3306/student
+    username: root
+    password: root
+
+
+suixingpay:
+  swagger2:
+    enabled: true # 是否开启，默认值为true
+    title: 标题
+    description: 描述
+    version: 1.0.0 #版本
+    license: 随行付 # 有默认值，可以不设置
+    licenseUrl: http://vbill.cn # 有默认值，可以不设置
+    termsOfServiceUrl: http://vbill.cn # 有默认值，可以不设置
+    contact:  # 联系人信息
+      name: 联系人姓名
+      url: 联系人主页
+      email: 联系人邮箱
+    base-package: com.suixingpay # 扫包路径
+    base-path: /** # 有默认值，可以不设置
+    exclude-path: /error, /ops/**
